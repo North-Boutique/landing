@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import "tachyons";
-import { Heading, Subhead } from "rebass";
+import { Heading } from "rebass";
 import {
   Hero,
   Flex,
