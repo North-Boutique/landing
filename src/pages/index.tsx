@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import "tachyons";
-import { Heading } from "rebass";
+import { Heading, Image } from "rebass";
 import {
   Hero,
   Flex,
@@ -30,6 +30,7 @@ export default function Home() {
           bg="black"
           bgOpacity={0.1}
         >
+          <Image src='/north-boutique-logo.png' />
           <Heading fontFamily={"TinseltownNFW01-Regular"} fontSize={150} color={"#EEF4FB"}>North Boutique</Heading>
           <Flex mt={3}>
             <CallToAction bg="grey" mr={3}>
