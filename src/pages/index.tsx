@@ -27,7 +27,6 @@ export default function Home() {
         <Hero
           color="white"
           backgroundImage="https://image.freepik.com/free-vector/colorful-memphis-design-background-vector_53876-81744.jpg"
-          // backgroundImage="https://image.freepik.com/free-vector/blue-abstract-acrylic-brush-stroke-textured-background_53876-86373.jpg"
           bg="black"
           bgOpacity={0.1}
         >
