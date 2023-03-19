@@ -32,7 +32,7 @@ export default function Home() {
           <Heading fontFamily={"TinseltownNFW01-Regular"} fontSize={150} color={"#EEF4FB"}>North Boutique</Heading>
           <Flex mt={3}>
             <CallToAction bg="grey" mr={3}>
-              Start Petition
+              Enter The Mailing List
             </CallToAction>
             <CallToAction>Start Campaign</CallToAction>
           </Flex>
