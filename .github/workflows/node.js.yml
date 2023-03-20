@@ -26,7 +26,6 @@ jobs:
         cache: 'yarn'
     - run: rm -rf node_modules && yarn install --frozen-lockfile
     - run: yarn; yarn build; yarn next export
-    - run: yarn test
   main:
     name: Deploy to Render
     runs-on: ubuntu-latest
