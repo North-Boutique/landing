@@ -1,0 +1,30 @@
+.baseContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: '. main .';
+  background-image: url('/landing-background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.homeContent {
+  grid-area: main;
+  margin-top: 2rem;
+  color: white;
+}
+
+.brandContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.brandContainer img {
+  height: 50px;
+  width: 50px;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
