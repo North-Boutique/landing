@@ -1,25 +1,21 @@
 .baseContainer {
-  height: 100vh;
+  min-height: 120vh;
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.2fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: '. main .';
-  background-image: url('/landing-background.png');
-  background-size: cover;
-  background-position: center;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  grid-template-areas:
+    'navbar navbar navbar'
+    '. main .'
+    '. details .';
+  background-color: var(--thistle);
 }
 
 .homeContent {
   grid-area: main;
   margin-top: 2rem;
-  color: white;
-}
+  color: var(--dark-slate-grey);
 
-.brandContainer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 1rem;
+  vertical-align: middle;
 }
 
 .brandContainer img {
@@ -27,4 +23,24 @@
   width: 50px;
   margin-right: 1rem;
   border-radius: 50%;
+}
+
+.homeInnerContainer {
+  grid-area: details;
+  border-radius: 15px;
+  background-color: #e4dce4;
+  padding: 1rem;
+}
+
+.homeContent h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 300;
+}
+
+.headerContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

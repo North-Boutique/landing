@@ -1,0 +1,10 @@
+.navbarContainer {
+  grid-area: navbar;
+  height: 75px;
+}
+
+.brandContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
