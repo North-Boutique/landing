@@ -26,10 +26,10 @@
 }
 
 .homeInnerContainer {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: '. content .';
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: '. content .';
   grid-area: details;
   border-radius: 15px;
   background-color: #e4dce4;
