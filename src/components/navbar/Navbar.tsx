@@ -44,7 +44,7 @@ const Navbar = () => {
             </NextLink>
           </Box>
           <Box mr={8}>
-            <NextLink href="/contact">
+            <NextLink href="#contactForm">
               <Text>Contact</Text>
             </NextLink>
           </Box>

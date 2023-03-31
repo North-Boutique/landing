@@ -1,0 +1,14 @@
+.contactFormBox {
+  background-color: var(--anti-flash-white);
+  color: var(--dark-slate-grey);
+}
+
+.contactFormSubmitButton {
+  background-color: var(--columbia-blue) !important;
+  color: var(--dark-slate-grey) !important;
+  transition: 0.3s opacity ease-out;
+}
+
+.contactFormSubmitButton:hover {
+  opacity: 0.7;
+}

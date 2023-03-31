@@ -1,5 +1,6 @@
+import ContactForm from '@/components/forms/ContactForm';
 import Navbar from '@/components/navbar/Navbar';
-import { Heading, Button } from '@chakra-ui/react';
+import { Heading, Button, Link } from '@chakra-ui/react';
 import React from 'react';
 import styles from './Home.module.css';
 
@@ -12,18 +13,28 @@ function Home() {
           <div style={{ display: 'grid' }}>
             <Heading size="lg">Our solutions to fit your needs</Heading>
             <Button
-              style={{ backgroundColor: '#C9F0FF', justifySelf: 'center' }}>
+              className={styles.contactUsButtonHome}
+              as={Link}
+              href="#contactForm"
+              style={{
+                backgroundColor: '#C9F0FF',
+                justifySelf: 'center',
+                textDecoration: 'none',
+              }}>
               Contact Us
             </Button>
           </div>
         </div>
       </div>
       <div className={styles.homeInnerContainer}>
-        <div>
+        <div className={styles.innerContainerContent}>
           Welcome to North Boutique, your premier IT and business consulting
           company that is dedicated to providing top-notch services to help your
           business grow and thrive.
         </div>
+      </div>
+      <div className={styles.contactContainer} id="contactForm">
+        <ContactForm />
       </div>
     </div>
   );
