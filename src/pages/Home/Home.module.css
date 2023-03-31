@@ -2,22 +2,53 @@
   min-height: 120vh;
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.2fr;
-  grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
+  grid-template-rows: 0.13fr 1fr 0.5fr 1fr;
   grid-template-areas:
-    'navbar navbar navbar'
-    '. main .'
+    'main main main'
+    'main main main'
     'details details details'
     '. contact .';
   background-color: var(--thistle);
 }
 
 .homeContent {
+  display: grid;
   grid-area: main;
-  margin-top: 2rem;
   color: var(--dark-slate-grey);
-
+  background-image: url('/NorthBoutiqueMainContentBackground.png');
+  background-size: cover;
   vertical-align: middle;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas:
+    'navbar  navbar navbar'
+    '. innerMain .';
   height: 100vh;
+}
+
+.headerContainer {
+  grid-area: innerMain;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1.13fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'cta .';
+}
+
+.headerContainerInnerCTA {
+  grid-area: cta;
+  text-align: center;
+  height: 50%;
+}
+
+.contactUsButtonHome {
+  background-color: var(--anti-flash-white) !important;
+  transition: 0.3s opacity ease-out;
+}
+.contactUsButtonHome:hover {
+  opacity: 0.7;
 }
 
 .brandContainer img {
@@ -49,25 +80,11 @@
 
 .homeContent h2 {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   font-weight: 300;
-}
-
-.headerContainer {
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .contactContainer {
   grid-area: contact;
   margin-bottom: 2rem;
-}
-
-.contactUsButtonHome {
-  transition: 0.3s opacity ease-out;
-}
-.contactUsButtonHome:hover {
-  opacity: 0.7;
 }

@@ -7,17 +7,16 @@ import styles from './Home.module.css';
 function Home() {
   return (
     <div className={styles.baseContainer}>
-      <Navbar />
       <div className={styles.homeContent}>
+        <Navbar />
         <div className={styles.headerContainer}>
-          <div style={{ display: 'grid' }}>
+          <div className={styles.headerContainerInnerCTA}>
             <Heading size="lg">Our solutions to fit your needs</Heading>
             <Button
               className={styles.contactUsButtonHome}
               as={Link}
               href="#contactForm"
               style={{
-                backgroundColor: '#C9F0FF',
                 justifySelf: 'center',
                 textDecoration: 'none',
               }}>

@@ -1,6 +1,8 @@
 .navbarContainer {
   grid-area: navbar;
-  height: 75px;
+  z-index: 100;
+  height: 80px;
+  background-color: var(--anti-flash-white);
 }
 
 .brandContainer {

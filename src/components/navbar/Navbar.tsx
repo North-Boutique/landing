@@ -11,7 +11,7 @@ const Navbar = () => {
       justify="space-between"
       wrap="wrap"
       px={20}
-      pt={30}>
+      py={5}>
       <Box>
         <div className={styles.brandContainer}>
           <Image mr={3} height="35px" src="/NorthBoutiqueIcon.png" />
