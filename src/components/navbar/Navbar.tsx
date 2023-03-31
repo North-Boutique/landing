@@ -15,7 +15,7 @@ const Navbar = () => {
       <Box>
         <div className={styles.brandContainer}>
           <Image mr={3} height="35px" src="/NorthBoutiqueIcon.png" />
-          <Text>North Boutique</Text>
+          <Text fontWeight={600}>North Boutique</Text>
         </div>
       </Box>
       <Box display={{ base: 'block', md: 'none' }} onClick={() => {}}>

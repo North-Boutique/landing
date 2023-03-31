@@ -11,15 +11,19 @@
   background-color: var(--thistle);
 }
 
+/* 12.3% */
+/* 7.43% */
+
 .homeContent {
   display: grid;
   grid-area: main;
   color: var(--dark-slate-grey);
   background-image: url('/NorthBoutiqueMainContentBackground.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   vertical-align: middle;
-  grid-template-columns: 0.1fr 1fr 0.1fr;
-  grid-template-rows: 0.2fr 1fr;
+  grid-template-columns: 7.43% 1fr 7.43%;
+  grid-template-rows: 12.3% 1fr;
   grid-template-areas:
     'navbar  navbar navbar'
     '. innerMain .';
@@ -32,7 +36,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1.13fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'cta .';
 }
@@ -40,7 +44,13 @@
 .headerContainerInnerCTA {
   grid-area: cta;
   text-align: center;
-  height: 50%;
+  height: 75%;
+}
+
+.headerContainerInnerCTA h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
 }
 
 .contactUsButtonHome {
@@ -78,13 +88,25 @@
   grid-area: c;
 }
 
-.homeContent h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-weight: 300;
-}
-
 .contactContainer {
   grid-area: contact;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .homeContent {
+    background-image: none;
+    background-color: var(--thistle);
+  }
+
+  .headerContainer {
+    grid-area: innerMain;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'cta cta';
+  }
 }
