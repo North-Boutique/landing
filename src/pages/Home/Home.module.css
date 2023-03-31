@@ -30,17 +30,20 @@
 .homeInnerContainer {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 80px 1fr 80px;
   grid-template-rows: 1fr;
   grid-template-areas: '. c .';
   grid-area: details;
   border-radius: 15px;
-  background-color: #e4dce4;
+
   padding: 1rem;
   margin-bottom: 2rem;
 }
 
 .innerContainerContent {
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #e4dce4;
   grid-area: c;
 }
 
