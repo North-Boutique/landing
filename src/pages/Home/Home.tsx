@@ -1,3 +1,4 @@
+import BottomNavigation from '@/components/BottomNavigation/BottomNavigation';
 import ContactForm from '@/components/forms/ContactForm';
 import Navbar from '@/components/navbar/Navbar';
 import { Heading, Button, Link } from '@chakra-ui/react';
@@ -11,7 +12,9 @@ function Home() {
         <Navbar />
         <div className={styles.headerContainer}>
           <div className={styles.headerContainerInnerCTA}>
-            <Heading size="lg">Our solutions to fit your needs</Heading>
+            <Heading size="lg">
+              Exceptional UI/UX Design for the Modern Digital Landscape
+            </Heading>
             <Button
               className={styles.contactUsButtonHome}
               as={Link}
@@ -27,15 +30,19 @@ function Home() {
       </div>
       <div className={styles.homeDetailsContainer}>
         <div className={styles.homeDetailsContainerContent}>
-          <Heading size="lg">
-            Welcome to North Boutique, your premier IT and business consulting
-            company that is dedicated to providing top-notch services to help
-            your business grow and thrive.
+          <Heading size="md">
+            Craft exceptional user experiences with our boutique dev studio! We
+            specialize in stunning UI design with seamless UX, proudly built in
+            Canada. Contact us to discuss your project requirements and create
+            something truly exceptional!
           </Heading>
         </div>
       </div>
       <div className={styles.contactContainer} id="contactForm">
         <ContactForm />
+      </div>
+      <div className={styles.bottomNavigationContainer}>
+        <BottomNavigation />
       </div>
     </div>
   );
@@ -62,3 +69,13 @@ export default Home;
 //           no further than North Boutique. Contact us today to learn more about
 //           how we can help you achieve your business goals and grow your bottom
 //           line.
+
+// {/* Looking for a development partner that can bring your vision to life
+//             with stunning design and seamless user experience? Look no further
+//             than our boutique dev studio! We specialize in crafting beautiful
+//             and eye-catching UIs that engage and delight users, and we are proud
+//             to be based in Canada. As a company, we bring a level of
+//             professionalism and attention to detail that is unmatched. So why
+//             settle for a run-of-the-mill development team when you can partner
+//             with us to create something truly exceptional? Contact us today to
+//             get started! */}

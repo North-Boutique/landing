@@ -32,7 +32,10 @@ const Navbar = () => {
         style={{ justifyContent: 'flex-end' }}
         width={'45%'}
         display={{ base: 'none', md: 'flex' }}>
-        <Flex align="center" justify="center">
+        <Flex
+          className={styles.navbarLinksContainer}
+          align="center"
+          justify="center">
           <Box mr={8}>
             <NextLink href="/">
               <Text>Home</Text>
