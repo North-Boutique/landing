@@ -30,12 +30,16 @@ function Home() {
       </div>
       <div className={styles.homeDetailsContainer}>
         <div className={styles.homeDetailsContainerContent}>
-          <Heading size="md">
-            Craft exceptional user experiences with our boutique dev studio! We
-            specialize in stunning UI design with seamless UX, proudly built in
-            Canada. Contact us to discuss your project requirements and create
-            something truly exceptional!
-          </Heading>
+          <div className={styles.homeDetailsBox1}>
+            <Heading size="sm">
+              Craft exceptional user experiences with our boutique dev studio!
+              We specialize in stunning UI design with seamless UX, proudly
+              built in Canada. Contact us to discuss your project requirements
+              and create something truly exceptional!
+            </Heading>
+          </div>
+          <div className={styles.homeDetailsBox2}>TBD</div>
+          <div className={styles.homeDetailsBox3}>TBD</div>
         </div>
       </div>
       <div className={styles.contactContainer} id="contactForm">

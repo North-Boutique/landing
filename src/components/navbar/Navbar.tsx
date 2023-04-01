@@ -10,7 +10,6 @@ const Navbar = () => {
       align="center"
       justify="space-between"
       wrap="wrap"
-      px={20}
       py={5}>
       <Box>
         <div className={styles.brandContainer}>
