@@ -1,54 +1,57 @@
 import BottomNavigation from '@/components/BottomNavigation/BottomNavigation';
 import ContactForm from '@/components/forms/ContactForm';
 import Navbar from '@/components/navbar/Navbar';
+import UnderConstruction from '@/components/UnderConstruction/UnderConstruction';
 import { Heading, Button, Link } from '@chakra-ui/react';
 import React from 'react';
 import styles from './Home.module.css';
 
 function Home() {
   return (
-    <div className={styles.baseContainer}>
-      <div className={styles.homeContent}>
-        <Navbar />
-        <div className={styles.headerContainer}>
-          <div className={styles.headerContainerInnerCTA}>
-            <Heading size="lg">
-              Exceptional UI/UX Design for the Modern Digital Landscape
-            </Heading>
-            <Button
-              className={styles.contactUsButtonHome}
-              as={Link}
-              href="#contactForm"
-              style={{
-                justifySelf: 'center',
-                textDecoration: 'none',
-              }}>
-              Contact Us
-            </Button>
-          </div>
-        </div>
-      </div>
-      <div className={styles.homeDetailsContainer}>
-        <div className={styles.homeDetailsContainerContent}>
-          <div className={styles.homeDetailsBox1}>
-            <Heading size="sm">
-              Craft exceptional user experiences with our boutique dev studio!
-              We specialize in stunning UI design with seamless UX, proudly
-              built in Canada. Contact us to discuss your project requirements
-              and create something truly exceptional!
-            </Heading>
-          </div>
-          <div className={styles.homeDetailsBox2}>TBD</div>
-          <div className={styles.homeDetailsBox3}>TBD</div>
-        </div>
-      </div>
-      <div className={styles.contactContainer} id="contactForm">
-        <ContactForm />
-      </div>
-      <div className={styles.bottomNavigationContainer}>
-        <BottomNavigation />
-      </div>
-    </div>
+    <UnderConstruction />
+
+    // < div className = { styles.baseContainer } >
+    //   <div className={styles.homeContent}>
+    //     <Navbar />
+    //     <div className={styles.headerContainer}>
+    //       <div className={styles.headerContainerInnerCTA}>
+    //         <Heading size="lg">
+    //           Exceptional UI/UX Design for the Modern Digital Landscape
+    //         </Heading>
+    //         <Button
+    //           className={styles.contactUsButtonHome}
+    //           as={Link}
+    //           href="#contactForm"
+    //           style={{
+    //             justifySelf: 'center',
+    //             textDecoration: 'none',
+    //           }}>
+    //           Contact Us
+    //         </Button>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <div className={styles.homeDetailsContainer}>
+    //     <div className={styles.homeDetailsContainerContent}>
+    //       <div className={styles.homeDetailsBox1}>
+    //         <Heading size="sm">
+    //           Craft exceptional user experiences with our boutique dev studio!
+    //           We specialize in stunning UI design with seamless UX, proudly
+    //           built in Canada. Contact us to discuss your project requirements
+    //           and create something truly exceptional!
+    //         </Heading>
+    //       </div>
+    //       <div className={styles.homeDetailsBox2}>TBD</div>
+    //       <div className={styles.homeDetailsBox3}>TBD</div>
+    //     </div>
+    //   </div>
+    //   <div className={styles.contactContainer} id="contactForm">
+    //     <ContactForm />
+    //   </div>
+    //   <div className={styles.bottomNavigationContainer}>
+    //     <BottomNavigation />
+    //   </div>
+    // </div >
   );
 }
 
