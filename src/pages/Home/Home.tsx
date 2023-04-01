@@ -25,11 +25,13 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.homeInnerContainer}>
-        <div className={styles.innerContainerContent}>
-          Welcome to North Boutique, your premier IT and business consulting
-          company that is dedicated to providing top-notch services to help your
-          business grow and thrive.
+      <div className={styles.homeDetailsContainer}>
+        <div className={styles.homeDetailsContainerContent}>
+          <Heading size="lg">
+            Welcome to North Boutique, your premier IT and business consulting
+            company that is dedicated to providing top-notch services to help
+            your business grow and thrive.
+          </Heading>
         </div>
       </div>
       <div className={styles.contactContainer} id="contactForm">

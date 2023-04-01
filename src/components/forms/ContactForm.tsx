@@ -73,13 +73,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Box
-      maxW="600px"
-      mx="auto"
-      mt={16}
-      p={6}
-      boxShadow="xl"
-      className={styles.contactFormBox}>
+    <Box maxW="600px" mx="auto" mt={16} p={6} className={styles.contactFormBox}>
       <Heading as="h2" size="lg" mb={8}>
         Contact us
       </Heading>

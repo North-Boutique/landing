@@ -2,9 +2,8 @@
   min-height: 120vh;
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.2fr;
-  grid-template-rows: 0.13fr 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    'main main main'
     'main main main'
     'details details details'
     '. contact .';
@@ -42,19 +41,24 @@
 }
 
 .headerContainerInnerCTA {
+  color: var(--dark-slate-grey);
   grid-area: cta;
   text-align: center;
-  height: 75%;
+  height: 40%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 .headerContainerInnerCTA h2 {
   text-align: center;
   margin-bottom: 3rem;
-  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 .contactUsButtonHome {
-  background-color: var(--anti-flash-white) !important;
+  color: var(--dark-slate-grey) !important;
+  background-color: var(--thistle) !important;
   transition: 0.3s opacity ease-out;
 }
 .contactUsButtonHome:hover {
@@ -68,24 +72,31 @@
   border-radius: 50%;
 }
 
-.homeInnerContainer {
-  margin-top: 2rem;
+.homeDetailsContainer {
   display: grid;
-  grid-template-columns: 80px 1fr 80px;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
   grid-template-rows: 1fr;
   grid-template-areas: '. c .';
   grid-area: details;
-  border-radius: 15px;
-
-  padding: 1rem;
-  margin-bottom: 2rem;
+  background-image: url('/NorthBoutiqueDetailsBackground.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.innerContainerContent {
+.homeDetailsContainerContent {
+  display: flex;
+  justify-self: center;
+  align-items: center;
   padding: 1rem;
   border-radius: 15px;
-  background-color: #e4dce4;
   grid-area: c;
+}
+
+.homeDetailsContainerContent h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contactContainer {

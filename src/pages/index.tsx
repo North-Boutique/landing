@@ -10,6 +10,11 @@ export default function Home() {
         <meta name="description" content="North Boutique" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/NorthBoutiqueIcon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+          rel="stylesheet"></link>
       </Head>
       <main className={styles.main}>
         <HomePage />
