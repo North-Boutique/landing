@@ -24,26 +24,6 @@ const experiencesData = [
     company: 'FundThrough Inc.',
   },
 ];
-const educationData = [
-  {
-    id: 1,
-    date: '2014 - 2016',
-    degree: 'Master Degree',
-    institute: 'Oxford Univercity',
-  },
-  {
-    id: 2,
-    date: '2010 - 2014',
-    degree: 'Bachelor Degree',
-    institute: 'Texas Univercity',
-  },
-  {
-    id: 3,
-    date: '2008 - 2010',
-    degree: 'Associate Degree',
-    institute: 'Simone College',
-  },
-];
 
 const EducationExperience = () => (
   <div

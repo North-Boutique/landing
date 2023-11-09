@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import SectionContainer from './SectionContainer';
 
 const socialIcon = [

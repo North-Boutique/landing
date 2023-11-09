@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { tokyo } from "../utils";
+import { useEffect } from 'react';
+import { tokyo } from '../utils';
 
 const PreLoader = () => {
   useEffect(() => {
@@ -7,9 +7,10 @@ const PreLoader = () => {
   }, []);
 
   return (
-    <div id="preloader">
-      <div className="loader_line"></div>
+    <div id={'preloader'}>
+      <div className={'loader_line'}></div>
     </div>
   );
 };
+
 export default PreLoader;

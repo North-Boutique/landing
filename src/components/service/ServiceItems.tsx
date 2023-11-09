@@ -67,7 +67,7 @@ const services = [
 ];
 
 const ServiceItems = () => {
-  const { setServiceModal, modalToggle, modal } = useContext(TokyoContext);
+  const { setServiceModal, modalToggle } = useContext(TokyoContext);
 
   return (
     <div className={'list w-full h-auto clear-both float-left'}>
