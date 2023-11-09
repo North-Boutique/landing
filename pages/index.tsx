@@ -6,7 +6,7 @@ import Home from 'components/Home';
 import Service from 'components/Service';
 
 const Portfolio = dynamic(
-  () => import('components/Portfolio').then((mod) => mod.Portfolio),
+  () => import('../src/components/Portfolio').then((mod) => mod.Portfolio),
   {
     ssr: false,
   }

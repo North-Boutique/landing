@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Image from 'next/image';
 
 const Intro = () => (
   <Fragment>
@@ -6,10 +7,12 @@ const Intro = () => (
       className={
         'top_author_image w-full h-auto clear-both float-left relative mb-[35px]'
       }>
-      <img
+      <Image
         className={'min-w-full'}
         src={'assets/img/slider/1.jpg'}
         alt={'image'}
+        width={1920}
+        height={1920}
       />
     </div>
     <div
