@@ -1,35 +1,151 @@
 {
-  "extends": "next/core-web-vitals",
-  "env": {
-    "browser": true,
-    "node": true,
-    "jest": true
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
   "plugins": [
-    "@emotion",
+    "@typescript-eslint",
     "react"
   ],
-  "rules": {
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "next/core-web-vitals"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "rules": {
+        "no-undef": "off"
       }
-    ],
-    "react/no-unknown-property": [
-      "error",
-      {
-        "ignore": [
-          "css"
+    },
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "parserOptions": {
+        "project": [
+          "./tsconfig.json"
         ]
       }
-    ]
-  }
+    },
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js"
+      ],
+      "rules": {
+        "import/extensions": "off",
+        "arrow-body-style": [
+          "error",
+          "as-needed"
+        ],
+        "object-shorthand": [
+          "error"
+        ],
+        "no-else-return": [
+          "error"
+        ],
+        "no-duplicate-imports": [
+          "error"
+        ],
+        "react/jsx-curly-brace-presence": [
+          2,
+          "always"
+        ],
+        "react/jsx-boolean-value": [
+          2,
+          "always"
+        ],
+        "@typescript-eslint/no-shadow": [
+          "error"
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-unnecessary-condition": [
+          "error"
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          2,
+          {
+            "argsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
+          }
+        ],
+        "@typescript-eslint/quotes": [
+          "off"
+        ],
+        "@typescript-eslint/object-curly-spacing": [
+          "error",
+          "always"
+        ],
+        "max-len": "off",
+        "quotes": "off",
+        "newline-after-var": 2,
+        "import/prefer-default-export": "off",
+        "padding-line-between-statements": [
+          "error",
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "block"
+          },
+          {
+            "blankLine": "always",
+            "prev": "block",
+            "next": "*"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "block-like"
+          },
+          {
+            "blankLine": "always",
+            "prev": "block-like",
+            "next": "*"
+          }
+        ],
+        "import/exports-last": 2,
+        "import/order": [
+          "error",
+          {
+            "groups": [
+              "builtin",
+              "external",
+              "parent",
+              "sibling",
+              "index"
+            ],
+            "pathGroups": [
+              {
+                "pattern": "react",
+                "group": "external",
+                "position": "before"
+              },
+              {
+                "pattern": "react-native",
+                "group": "external",
+                "position": "before"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": [
+              "react"
+            ],
+            "newlines-between": "never"
+          }
+        ],
+        "react/function-component-definition": [
+          2,
+          {
+            "namedComponents": "arrow-function"
+          }
+        ]
+      }
+    }
+  ],
+  "root": true
 }
