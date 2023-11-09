@@ -95,9 +95,7 @@ const Portfolio = () => {
   useEffect(() => {
     const data = document.querySelector('.item__');
 
-    // @ts-expect-error TS(2531): Object is possibly 'null'.
-
-    if (data.length !== 0) {
+    if (data) {
       setTimeout(() => {
         isotope.current = new Isotope('.gallery_zoom', {
           itemSelector: '.item__',
@@ -126,7 +124,7 @@ const Portfolio = () => {
     tokyo.portfolioHover();
     tokyo.dataImage();
   });
-  // @ts-expect-error TS(2339): Property 'setPortfolioDetailsModal' does not exist... Remove this comment to see the full error message
+
   const { setPortfolioDetailsModal, modalToggle } = useContext(TokyoContext);
 
   return (

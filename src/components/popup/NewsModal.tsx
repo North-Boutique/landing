@@ -5,7 +5,6 @@ import ModalContainer from './ModalContainer';
 import { TokyoContext } from '@/src/Context';
 
 const NewsModal = () => {
-  // @ts-expect-error TS(2339): Property 'newsModal' does not exist on type 'unkno... Remove this comment to see the full error message
   const { newsModal, setNewsModal } = useContext(TokyoContext);
 
   return (

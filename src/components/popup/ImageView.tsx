@@ -29,20 +29,19 @@ const ImgViews = ({ close, src }: any) => {
 };
 
 const ImageView = () => {
-  const [img, setImg] = useState(false);
-  const [imgValue, setImgValue] = useState(null);
+  const [img, setImg] = useState<boolean>(false);
+  const [imgValue, setImgValue] = useState<string | null>(null);
 
   useEffect(() => {
     setTimeout(() => {
       const a = document.querySelectorAll('a');
 
-      a.forEach((a) => {
-        if (a.href.includes('assets/img/')) {
-          if (a.getAttribute('download') === null) {
-            a.addEventListener('click', (e) => {
+      a.forEach((ad) => {
+        if (ad.href.includes('assets/img/')) {
+          if (ad.getAttribute('download') === null) {
+            ad.addEventListener('click', (e) => {
               e.preventDefault();
-              // @ts-expect-error TS(2345): Argument of type 'string' is not assignable to par... Remove this comment to see the full error message
-              setImgValue(a.href);
+              setImgValue(ad.href);
               setImg(true);
             });
           }

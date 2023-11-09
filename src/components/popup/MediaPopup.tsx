@@ -79,30 +79,28 @@ const AudioPopup = ({ close, audioID }: any) => {
 };
 
 const MediaPopup = () => {
-  const [videoValue, setVideoValue] = useState(null);
-  const [audio, setAudio] = useState(false);
+  const [videoValue, setVideoValue] = useState<string | null>(null);
+  const [audio, setAudio] = useState<string | false | null>(false);
   const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       const a = document.querySelectorAll('a');
 
-      a.forEach((a) => {
+      a.forEach((ad) => {
         if (
-          a.href.includes('www.youtube.com') ||
-          a.href.includes('vimeo.com') ||
-          a.href.includes('soundcloud.com')
+          ad.href.includes('www.youtube.com') ||
+          ad.href.includes('vimeo.com') ||
+          ad.href.includes('soundcloud.com')
         ) {
-          a.addEventListener('click', (e) => {
+          ad.addEventListener('click', (e) => {
             e.preventDefault();
 
-            if (a.href.includes('soundcloud')) {
-              // @ts-expect-error TS(2345): Argument of type 'string' is not assignable to par... Remove this comment to see the full error message
-              setAudio(a.href);
+            if (ad.href.includes('soundcloud')) {
+              setAudio(ad.href);
               setToggle(true);
             } else {
-              // @ts-expect-error TS(2345): Argument of type 'string' is not assignable to par... Remove this comment to see the full error message
-              setVideoValue(a.href);
+              setVideoValue(ad.href);
               setToggle(true);
             }
           });
@@ -125,7 +123,6 @@ const MediaPopup = () => {
         <AudioPopup
           close={() => {
             setToggle(false);
-            // @ts-expect-error TS(2345): Argument of type 'null' is not assignable to param... Remove this comment to see the full error message
             setAudio(null);
           }}
           audioID={audio}

@@ -8,7 +8,6 @@ type ModalContainerProps = {
 };
 
 const ModalContainer = ({ children, nullValue }: ModalContainerProps) => {
-  // @ts-expect-error TS(2339): Property 'modalToggle' does not exist on type 'unk... Remove this comment to see the full error message
   const { modalToggle } = useContext(TokyoContext);
   const domNode = useClickOutside(() => {
     modalToggle(false);

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
   const [mailData, setMailData] = useState({
@@ -8,7 +8,7 @@ const ContactForm = () => {
     message: '',
   });
   const { name, email, message } = mailData;
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<boolean | null>(null);
   const onChange = (e: any) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
 
@@ -22,28 +22,26 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (name.length === 0 || email.length === 0 || message.length === 0) {
-      // @ts-expect-error TS(2345): Argument of type 'true' is not assignable to param... Remove this comment to see the full error message
       setError(true);
       clearError();
     } else {
-      emailjs
-        .send(
-          'service_seruhwu', // service id
-          'template_21aw58z', // template id
-          mailData,
-          'Q3pccdLZhU-mZT7tQ' // public api
-        )
-        .then(
-          (response) => {
-            // @ts-expect-error TS(2345): Argument of type 'false' is not assignable to para... Remove this comment to see the full error message
-            setError(false);
-            clearError();
-            setMailData({ name: '', email: '', message: '' });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
+      // emailjs
+      //   .send(
+      //     'service_seruhwu', // service id
+      //     'template_21aw58z', // template id
+      //     mailData,
+      //     'Q3pccdLZhU-mZT7tQ' // public api
+      //   )
+      //   .then(
+      //     () => {
+      //       setError(false);
+      //       clearError();
+      //       setMailData({ name: '', email: '', message: '' });
+      //     },
+      //     (err) => {
+      //       console.log(err.text);
+      //     }
+      //   );
     }
   };
 

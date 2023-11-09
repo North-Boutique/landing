@@ -4,7 +4,6 @@ import ModalContainer from './ModalContainer';
 import { TokyoContext } from '@/src/Context';
 
 const ServiceModal = () => {
-  // @ts-expect-error TS(2339): Property 'serviceModal' does not exist on type 'un... Remove this comment to see the full error message
   const { serviceModal, setServiceModal } = useContext(TokyoContext);
 
   return (
@@ -27,7 +26,7 @@ const ServiceModal = () => {
         <div className={'descriptions w-full float-left'}>
           {serviceModal.text.map((text: any, i: any) => (
             <p
-              className={serviceModal.text.length - 1 == i ? '' : 'mb-[15px]'}
+              className={serviceModal.text.length - 1 === i ? '' : 'mb-[15px]'}
               key={i}>
               {text}
             </p>

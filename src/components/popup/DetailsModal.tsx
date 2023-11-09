@@ -4,7 +4,6 @@ import ModalContainer from './ModalContainer';
 import { TokyoContext } from '@/src/Context';
 
 const DetailsModal = () => {
-  // @ts-expect-error TS(2339): Property 'portfolioDetailsModal' does not exist on... Remove this comment to see the full error message
   const { portfolioDetailsModal, setPortfolioDetailsModal } =
     useContext(TokyoContext);
 
@@ -31,7 +30,7 @@ const DetailsModal = () => {
             {portfolioDetailsModal.text.map((text: any, i: any) => (
               <p
                 className={
-                  portfolioDetailsModal.text.length - 1 == i ? '' : 'mb-[20px]'
+                  portfolioDetailsModal.text.length - 1 === i ? '' : 'mb-[20px]'
                 }
                 key={i}>
                 {text}
