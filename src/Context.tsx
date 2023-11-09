@@ -15,6 +15,12 @@ type TokyoContextProps = {
   newsModal: any;
   portfolioDetailsModal: any;
   menus: MenuItemProps[];
+  navChange?: any;
+  animationChnage?: any;
+  modalToggle?: any;
+  setServiceModal?: any;
+  setNewsModal?: any;
+  setPortfolioDetailsModal?: any;
 };
 
 // Type
