@@ -21,11 +21,11 @@ const Mobile = () => {
             {/* You can use image or text as logo. data-type values are "image" and "text" */}
             <a href={'#'}>
               <Image
-                className={'max-w-[100px] max-h-[40px]'}
+                className={'max-w-[30px] max-h-[30px]'}
                 src={'assets/img/northboutiqueicon.png'}
                 alt={'image'}
-                width={100}
-                height={100}
+                width={30}
+                height={30}
               />
               <h3
                 className={
