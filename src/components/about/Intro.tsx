@@ -38,7 +38,7 @@ const Intro = () => (
       </p>
       <p>
         {
-          'My specialty lies in taking innovative concepts and transforming them into fully-functional'
+          'My specialty lies in taking innovative concepts and transforming them into fully-functional '
         }
         {
           'mobile platforms, always striving to create user experiences with a unique, '

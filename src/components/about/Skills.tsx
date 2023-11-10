@@ -6,7 +6,7 @@ const programming = [
   { id: 3, name: 'GraphQL', value: 80 },
 ];
 const language = [
-  { id: 1, name: 'English', value: 95 },
+  { id: 1, name: 'English', value: 100 },
   { id: 2, name: 'French', value: 85 },
   { id: 3, name: 'Romanian', value: 80 },
 ];
