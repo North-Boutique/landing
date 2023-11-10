@@ -24,6 +24,7 @@ const Mobile = () => {
                 className={'max-w-[30px] max-h-[30px]'}
                 src={'assets/img/northboutiqueicon.png'}
                 alt={'image'}
+                priority={true}
                 width={30}
                 height={30}
               />

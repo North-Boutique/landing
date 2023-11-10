@@ -3,7 +3,7 @@ const programming = [
   { id: 2, name: 'React', value: 95 },
   { id: 3, name: 'Typescript', value: 95 },
   { id: 4, name: 'Redux-Toolkit/RTK', value: 90 },
-  { id: 3, name: 'GraphQL', value: 80 },
+  { id: 5, name: 'GraphQL', value: 80 },
 ];
 const language = [
   { id: 1, name: 'English', value: 100 },
