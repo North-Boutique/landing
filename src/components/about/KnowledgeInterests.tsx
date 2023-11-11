@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 const knowledge = [
-  { id: 1, text: 'React Native, Redux' },
-  { id: 2, text: 'React, Typescript' },
+  { id: 1, text: 'React Native, Redux, Expo' },
+  { id: 2, text: 'React, Typescript, iOS, Android' },
   { id: 3, text: 'CSS, Sass, Less' },
   { id: 4, text: 'REST, GraphQL, Apollo' },
   { id: 5, text: 'Ruby On Rails, Postgres' },
