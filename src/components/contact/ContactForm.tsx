@@ -36,10 +36,9 @@ const ContactForm = () => {
 
       fetch('https://api.brevo.com/v3/contacts', options)
         .then((response) => response.json())
-        .then((response) => {
+        .then(() => {
           setError(false);
           setMailData({ name: '', email: '', message: '' });
-          console.log(response);
         })
         .catch((err) => console.error(err));
     }
