@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
   const [mailData, setMailData] = useState({
@@ -25,23 +24,24 @@ const ContactForm = () => {
       setError(true);
       clearError();
     } else {
-      // emailjs
-      //   .send(
-      //     'service_seruhwu', // service id
-      //     'template_21aw58z', // template id
-      //     mailData,
-      //     'Q3pccdLZhU-mZT7tQ' // public api
-      //   )
-      //   .then(
-      //     () => {
-      //       setError(false);
-      //       clearError();
-      //       setMailData({ name: '', email: '', message: '' });
-      //     },
-      //     (err) => {
-      //       console.log(err.text);
-      //     }
-      //   );
+      const options = {
+        method: 'POST',
+        headers: {
+          accept: 'application/json',
+          'content-type': 'application/json',
+          'api-key': process.env.NEXT_PUBLIC_BREVO_API_KEY || '',
+        },
+        body: JSON.stringify({ email, attributes: { name, message } }),
+      };
+
+      fetch('https://api.brevo.com/v3/contacts', options)
+        .then((response) => response.json())
+        .then((response) => {
+          setError(false);
+          setMailData({ name: '', email: '', message: '' });
+          console.log(response);
+        })
+        .catch((err) => console.error(err));
     }
   };
 
