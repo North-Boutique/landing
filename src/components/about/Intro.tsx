@@ -80,8 +80,8 @@ const Intro = () => (
                   className={
                     'text-[#767676] transition-all duration-300 hover:text-black'
                   }
-                  href={'mailto:northboutiquedesign@gmail.com'}>
-                  {'northboutiquedesign@gmail.com'}
+                  href={'mailto:antonmihail@gmail.com'}>
+                  {'antonmihail@gmail.com'}
                 </a>
               </span>
             </li>
@@ -124,16 +124,16 @@ const Intro = () => (
                 }>
                 {'Interest:'}
               </span>
-              <span>{'Machine Learning'}</span>
+              <span>{'Building Great Products'}</span>
             </li>
             <li className={'m-0'}>
               <span
                 className={
                   'min-w-[100px] float-left mr-[10px] font-bold text-black'
                 }>
-                {'Freelance:'}
+                {'Contract / Pro-Bono:'}
               </span>
-              <span>{'Available'}</span>
+              <span>{'Of Course!'}</span>
             </li>
           </ul>
         </div>
