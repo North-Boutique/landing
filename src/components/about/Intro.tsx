@@ -9,7 +9,7 @@ const Intro = () => (
       }>
       <Image
         className={'min-w-full'}
-        src={'assets/img/slider/1.jpg'}
+        src={'assets/img/profilepic.jpeg'}
         alt={'image'}
         width={1920}
         height={1920}
