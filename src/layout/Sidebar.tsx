@@ -25,7 +25,7 @@ const Sidebar = () => {
             />
             <h3
               className={'font-poppins font-black text-[31px] tracking-[5px]'}>
-              {'North Boutique'}
+              {'North Boutique Ltd.'}
             </h3>
           </Link>
         </div>
@@ -55,7 +55,7 @@ const Sidebar = () => {
               'text-[15px] text-[#999] font-montserrat leading-[25px]'
             }>
             {'© '}
-            {new Date().getFullYear()} {'North Boutique'}
+            {new Date().getFullYear()} {'North Boutique Ltd.'}
             <br />
             {'Created by'}{' '}
             <Link

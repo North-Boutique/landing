@@ -9,7 +9,7 @@ const nextConfig = {
     typedRoutes: true,
   },
   env: {
-    siteTitle: 'North Boutique',
+    siteTitle: 'North Boutique Ltd.',
     siteDescription: 'Premier Tech and Design Consulting',
     siteKeywords: 'North Boutqiue Design Development Tech Consulting',
     siteUrl: 'https://north.boutique',

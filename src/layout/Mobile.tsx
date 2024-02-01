@@ -32,7 +32,7 @@ const Mobile = () => {
                 className={
                   'font-black font-poppins text-[25px] tracking-[4px]'
                 }>
-                {'North Boutique'}
+                {'North Boutique Ltd.'}
               </h3>
             </a>
           </div>
