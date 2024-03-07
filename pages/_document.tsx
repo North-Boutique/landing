@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const Document = () => (
   <Html lang={'en'}>
@@ -29,6 +30,7 @@ const Document = () => (
       <Main />
       <NextScript />
     </body>
+    <GoogleAnalytics gaId={"G-F0QQMH9GEC"} />
   </Html>
 );
 
