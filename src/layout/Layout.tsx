@@ -9,6 +9,8 @@ import ImageView from 'components/popup/ImageView';
 import MediaPopup from 'components/popup/MediaPopup';
 import NewsModal from 'components/popup/NewsModal';
 import ServiceModal from 'components/popup/ServiceModal';
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 
 const Layout = ({ children }: any) => {
   useEffect(() => {
@@ -56,6 +58,7 @@ const Layout = ({ children }: any) => {
         <Cursor />
         {/* /CURSOR */}
       </div>
+      <GoogleAnalytics gaId={"G-F0QQMH9GEC"} />
     </Fragment>
   );
 };
