@@ -1,4 +1,5 @@
 import { Fragment, useContext, useEffect } from 'react';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { TokyoContext } from '@/src/Context';
 import DetailsModal from '@/src/components/popup/DetailsModal';
 import Cursor from '@/src/layout/Cursor';
@@ -9,7 +10,6 @@ import ImageView from 'components/popup/ImageView';
 import MediaPopup from 'components/popup/MediaPopup';
 import NewsModal from 'components/popup/NewsModal';
 import ServiceModal from 'components/popup/ServiceModal';
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 
 const Layout = ({ children }: any) => {
