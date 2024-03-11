@@ -1,24 +1,30 @@
 const experiencesData = [
   {
     id: 1,
-    date: '2023 - Now',
+    date: 'Sept 2023 - Now',
+    designation: 'Mobile Lead',
+    company: 'Hypercard Inc.',
+  },
+  {
+    id: 2,
+    date: 'Apr 2023 - Mar 2024',
     designation: 'Senior Mobile Engineer',
     company: 'Intellitix Inc.',
   },
   {
-    id: 2,
+    id: 3,
     date: '2022 - 2023',
     designation: 'Senior Software Engineer',
     company: 'Stadium Live',
   },
   {
-    id: 3,
+    id: 4,
     date: '2021 - 2022',
     designation: 'Software Engineer',
     company: 'Coinberry Ltd.',
   },
   {
-    id: 4,
+    id: 5,
     date: '2019 - 2021',
     designation: 'Software Engineer',
     company: 'FundThrough Inc.',
