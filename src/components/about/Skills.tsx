@@ -9,6 +9,7 @@ const language = [
   { id: 1, name: 'English', value: 100 },
   { id: 2, name: 'French', value: 85 },
   { id: 3, name: 'Romanian', value: 80 },
+  { id: 4, name: 'Spanish', value: 55 },
 ];
 
 const Skills = () => (
